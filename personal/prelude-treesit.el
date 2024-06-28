@@ -1,4 +1,4 @@
-(prelude-require-packages '(tree-sitter tree-sitter-langs treesit-auto))
+(prelude-require-package 'treesit-auto)
 
 (use-package treesit-auto
   :custom

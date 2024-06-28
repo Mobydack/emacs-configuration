@@ -2,7 +2,7 @@
   "Faces for highlighting whitespace characters."
   :group 'leerzeichen)
 
-(defface leerzeichen '((t (:foreground "#b8b8b8")))
+(defface leerzeichen '((t (:foreground "#5c5c5c")))
   "Face for `leerzeichen-mode'."
   :group 'leerzeichen)
 
@@ -16,7 +16,6 @@
 (defun leerzeichen-display-table ()
   "Display table to highlight whitespace characters."
   (let ((table (make-display-table)))
-    (aset table ?\n `[,leerzeichen-line-feed-glyph ?\n])
     (aset table ?\t (vconcat `[,leerzeichen-tab-glyph] (make-vector (1- tab-width) ? )))
     (aset table ?\  `[,leerzeichen-space-glyph])
     table))

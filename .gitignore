@@ -33,4 +33,5 @@ var/
 gotools/
 eln-cache/
 tree-sitter/
+org-roam.db
 

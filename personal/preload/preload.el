@@ -1,7 +1,3 @@
-;; Window
-(when (window-system)
-    (push '(fullscreen . maximized) default-frame-alist))
-
 ;; Font
 (let ((fonts '(
     "Iosevka"
