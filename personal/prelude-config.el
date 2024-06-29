@@ -1,4 +1,4 @@
-(prelude-require-packages '(transpose-frame perfect-margin))
+(prelude-require-packages '(transpose-frame perfect-margin all-the-icons-ibuffer all-the-icons))
 
 (use-package perfect-margin
   :custom
@@ -8,5 +8,12 @@
   (perfect-margin-mode t)
   ;; auto-center special windows
   (setq perfect-margin-ignore-regexps nil))
+
+(use-package all-the-icons
+  :if (display-graphic-p))
+
+(use-package all-the-icons-ibuffer
+  :ensure t
+  :hook (ibuffer-mode . all-the-icons-ibuffer-mode))
 
 (provide 'prelude-config)
