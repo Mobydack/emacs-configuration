@@ -1,5 +1,7 @@
 (prelude-require-packages '(transpose-frame perfect-margin all-the-icons-ibuffer all-the-icons))
 
+(setq projectile-project-search-path '(("~/repos" . 6))) 
+
 (use-package perfect-margin
   :custom
   (perfect-margin-visible-width 128)
